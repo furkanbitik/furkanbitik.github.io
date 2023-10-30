@@ -6,6 +6,10 @@ body{
 	font-family: 'Arial', sans-serif;
 }
 
+p {
+    font-size: 1.2em; /* veya başka bir değer */
+}
+
 .love-container {
 	background-image: url('background1.jpg'); /* Görseli belirtin */
 	background-size: cover; /* Görseli kaplamak için */
@@ -21,3 +25,10 @@ body{
 	  padding: 30px;
 	}
   }
+
+  blockquote{
+	font-family: 'Arial', sans-serif;
+	font-style: italic;
+	font-weight: bold;
+  }
+
