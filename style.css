@@ -87,10 +87,10 @@ i {
 	bottom: 10px;
 }
 .hori-selector .right{
-	right: -25px;
+	right: -20px;
 }
 .hori-selector .left{
-	left: -25px;
+	left: -20px;
 }
 .hori-selector .right:before,
 .hori-selector .left:before{
@@ -103,11 +103,11 @@ i {
 }
 .hori-selector .right:before{
 	bottom: 0;
-    right: -25px;
+    right: -20px;
 }
 .hori-selector .left:before{
 	bottom: 0;
-    left: -25px;
+    left: -20px;
 }
 
 
@@ -150,18 +150,18 @@ i {
 		right: 10px;
 	}
 	.hori-selector .left{
-		top: -25px;
+		top: -20px;
 		left: auto;
 	}
 	.hori-selector .right{
-		bottom: -25px;
+		bottom: -20px;
 	}
 	.hori-selector .left:before{
-		left: -25px;
-		top: -25px;
+		left: -20px;
+		top: -20px;
 	}
 	.hori-selector .right:before{
-		bottom: -25px;
-		left: -25px;
+		bottom: -20px;
+		left: -20px;
 	}
 }
