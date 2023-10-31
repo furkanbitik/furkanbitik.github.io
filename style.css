@@ -18,10 +18,15 @@ p {
 	color: #FFFFFF; /* Yazı rengi */
 	padding: 50px;
 	text-align: center;
+	width: 100%; 
+	height: auto; 
+	max-width: 600px;
+	margin: 0 auto;
   }
   
   @media (max-width: 768px) {
 	.love-container {
+	  max-width: 100%;
 	  padding: 30px;
 	}
   }
