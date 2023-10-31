@@ -11,7 +11,7 @@ p {
 }
 
 .love-container {
-	background-image: url('siir_background.jpg'); /* Görseli belirtin */
+	background-image: url('background1.jpg'); /* Görseli belirtin */
 	background-size: cover; /* Görseli kaplamak için */
 	background-position: center; /* Görseli ortalamak için */
 	background-color: #FF85A2; /* Aşk temalı arka plan rengi (görsel yüklenene kadar görünecek) */
