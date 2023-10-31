@@ -30,8 +30,8 @@ p {
 	}
 
 	img{
-		width: 100%; /* İstediğiniz genişlik */
-		height: auto; /* Otomatik yükseklik, oranları korur */
+		width: 390px; /* İstediğiniz genişlik */
+		height: 844px; /* Otomatik yükseklik, oranları korur */
 		object-fit: cover; /* Resmi boyutlarına oranla orantılı şekilde kırp */
 	}
 }
