@@ -36,3 +36,7 @@ p {
 	font-weight: bold;
   }
 
+  .navbar-toggler-icon{
+	background-image: url('micon.png'); 
+  }
+
