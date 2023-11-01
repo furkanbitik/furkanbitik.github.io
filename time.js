@@ -10,21 +10,21 @@
       dd = String(today.getDate()).padStart(2, "0"),
       mm = String(today.getMonth() + 1).padStart(2, "0"),
       yyyy = today.getFullYear(),
-      pastDate = new Date("2022-06-03"), // Set the past date
+      nextYear = yyyy + 1,
       dayMonth = "09/30/",
-      targetDate = dayMonth + yyyy;
+      birthday = dayMonth + yyyy;
   
   today = mm + "/" + dd + "/" + yyyy;
-  if (today > targetDate) {
-    targetDate = dayMonth + yyyy;
+  if (today > birthday) {
+    birthday = dayMonth + nextYear;
   }
   //end
   
-  const countDown = pastDate.getTime(),
+  const countDown = new Date(birthday).getTime(),
       x = setInterval(function() {    
 
         const now = new Date().getTime(),
-              distance = now - countDown;
+              distance = countDown - now;
 
         document.getElementById("days").innerText = Math.floor(distance / (day)),
           document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
@@ -40,4 +40,4 @@
         }
         //seconds
       }, 0)
-}());
+  }());
