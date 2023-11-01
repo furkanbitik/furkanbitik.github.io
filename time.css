@@ -11,14 +11,6 @@ body {
     transition: background-color 0.5s;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
 .container-fluid{
     margin-bottom: 50px;
 }
