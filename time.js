@@ -5,7 +5,7 @@ const minutesRemaining = document.getElementById("minutes");
 const secondsRemaining = document.getElementById("seconds");
 
 const msg = document.querySelector(".message");
-msg.style.visibility = "visible";
+
 
 // Display Date Function
 function displayDate() {
@@ -31,7 +31,7 @@ function displayDate() {
   minutesRemaining.textContent = minutes;
   secondsRemaining.textContent = remainingSeconds;
 
-  
+  msg.style.visibility = "visible";
 }
 
 
