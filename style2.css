@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background-image: url('r1.jpg');
+  background-image: url('k0.jpg');
   background-size: cover;
   background-attachment: fixed;
   display: flex;
@@ -20,12 +20,4 @@ body {
 
 blockquote {
   margin: 0; /* Blockquote'in varsayılan margin'ını kaldır */
-}
-
-h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1; /* Başlığı en üste getir */
 }
