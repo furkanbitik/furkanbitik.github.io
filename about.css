@@ -2,19 +2,8 @@ body {
     margin: 0;
     padding: 0;
   }
-  
-  .container {
-    position: relative;
-    overflow: hidden;
-  }
 
-  .bg-image {
-    background-image: url('about.jpg');
-  }
-
-  /*
-  
-  .bg-image {
+.text{
     position: absolute;
     top: 0;
     left: 0;
@@ -24,12 +13,11 @@ body {
     background-size: cover;
     background-repeat: repeat-y; 
     filter: brightness(70%) contrast(110%); 
-    z-index: -1; 
-  }
-  
-  blockquote {
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    z-index: 1; 
-  }
+    z-index: -1;
+ 
+}
 
-*/
+blockquote{
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
+}
+
