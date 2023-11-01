@@ -62,12 +62,7 @@ function getDistinationDate() {
     currentMonth = current.getMonth(),
     currentYear = current.getFullYear();
 
-  const distinationYear =
-    currentYear +
-    Number(
-      currentMonth > distinationMonth - 1 ||
-        (currentMonth === distinationMonth - 1 && currentDay > distinationDay)
-    );
+  const distinationYear = 2022
 
   return new Date(
     `${distinationMonth}, ${distinationDay}, ${distinationYear}, 00:00:00`
