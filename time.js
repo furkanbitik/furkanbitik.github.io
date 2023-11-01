@@ -54,20 +54,15 @@ document.querySelector("#light-dark-toogle").onclick = function (e) {
 };
 
 function getDistinationDate() {
-  const distinationMonth = 7; // July
-  const distinationDay = 1;
+  const distinationMonth = 6; // Haziran (JavaScript'te aylar 0'dan başlar, bu yüzden 6 Haziran'ı temsil eder)
+  const distinationDay = 3;
 
   const current = new Date();
   const currentDay = current.getDay(),
     currentMonth = current.getMonth(),
     currentYear = current.getFullYear();
 
-  const distinationYear =
-    currentYear +
-    Number(
-      currentMonth > distinationMonth - 1 ||
-        (currentMonth === distinationMonth - 1 && currentDay > distinationDay)
-    );
+  const distinationYear =2022
 
   return new Date(
     `${distinationMonth}, ${distinationDay}, ${distinationYear}, 00:00:00`
