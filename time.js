@@ -15,27 +15,20 @@ function displayDate() {
   // Difference in Milliseconds
   let difference = currentDate - destinationDate;
 
-  if (difference <= 0) {
-    difference = 0;
-    msg.style.visibility = "visible";
-  }
-
   // Convert milliseconds to seconds
   let seconds = Math.floor(difference / 1000);
 
   // Calculate days, hours, minutes, and remaining seconds
   let days = Math.floor(seconds / (24 * 60 * 60));
-  seconds %= 24 * 60 * 60;
-  let hours = Math.floor(seconds / (60 * 60));
-  seconds %= 60 * 60;
-  let minutes = Math.floor(seconds / 60);
-  seconds %= 60;
+  let hours = Math.floor((seconds % (24 * 60 * 60)) / (60 * 60));
+  let minutes = Math.floor((seconds % (60 * 60)) / 60);
+  let remainingSeconds = seconds % 60;
 
   // Update DOM elements
   daysRemaining.textContent = days;
   hoursRemaining.textContent = hours;
   minutesRemaining.textContent = minutes;
-  secondsRemaining.textContent = seconds;
+  secondsRemaining.textContent = remainingSeconds;
 }
 
 // Initial Call
