@@ -1,113 +1,25 @@
 body {
-    background-color: #292B2A;
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
-    display: flex ;
-    justify-content: space-around; 
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    transition: background-color 0.5s;
-}
-
-.container {
-    width: 100vw;
-    display: flex;
-    justify-content: space-around;
-}
-
-.card {
-    position: relative;
-    width: 20vw;
-    height: 200px;
-    background-color: #F8E700;
-    border-radius: 1rem ;
-    display: flex ; 
-    justify-content: center; 
-    align-items: center;
-    transition: background-color 0.5s;
-}
-  
-  .time {
-    font-size: 6rem;
-    font-weight: bold;
-    color: #292B2A;
-    transition: color 0.5s;
-}
-  
-  .card span {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 20px;
-    color: #292B2A;
-    transition: color 0.5s;
-}
-  
-.fas.fa-sun,
-.fas.fa-moon {
-    font-size: 2rem ;
-    font-weight: bold;
-    cursor: pointer; 
-    color: #F8E700;
-    position: absolute; 
-    left: 20px; 
-    top: 20px;
-}
-  
-  /* /////////////////////// Dark /////////////////// */
-body.dark {
-    background-color: #2B2D42;
-}
-  
-.dark .card {
-    background-color: #8D99AE;
-}
-  
-.dark .time , .dark span {
-    color: #2B2D42
-}
-  
-.dark .fas.fa-sun,
-.dark .fas.fa-moon{
-    color: #8D99AE
-}
-  
-.message {
-    position: absolute;
-    bottom: -4rem;
-    font-size: 5rem;
-    font-weight: bold;
-    color: #F8E700;
-    font-family: 'Yellowtail', cursive;
-}
-  
-.dark .message {
-    color: #8D99AE
-}
-
-.important-dates {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.date-item {
-    margin-bottom: 15px;
-}
-
-.date-item span {
-    font-weight: bold;
-    color: #e96363;
-}
-
-.text{
-    color: #e96363;
-    font-weight: bold;
-    font-family: 'Arial', sans-serif;
-}
-    
-  
-  
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s ease;
+   }
+   
+   .message {
+    margin-top: 20px;
+   }
+   
+   .card {
+    margin: 20px 0;
+   }
+   
+   .card-title {
+    font-size: 20px;
+   }
+   
+   .card-text {
+    font-size: 48px;
+   }
+   
+   .dark {
+    background-color: #333;
+    color: #fff;
+   }

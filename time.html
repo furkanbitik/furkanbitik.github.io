@@ -1,82 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
-
-    <!-- Latest compiled and minified CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-    <link rel="stylesheet" href="time.css">
-
-    <title>Document 21</title>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+ <link rel="stylesheet" href="styles.css">
+ <title>Countdown</title>
 </head>
 <body>
-
-    <div class="container">
-        <div class="card">
-          <p class="time" id="days">00</p>
-          <span>Days</span>  
+ <div class="container">
+    <h1 class="message text-center">Time to Wedding!</h1>
+    <div class="row">
+      <div class="col">
+        <div class="card text-center">
+          <div class="card-body">
+            <h5 class="card-title">Days</h5>
+            <h1 class="card-text" id="days">0</h1>
+          </div>
         </div>
-        <div class="card">
-          <p class="time" id="hours">00</p>
-          <span>Hours</span>
+      </div>
+      <div class="col">
+        <div class="card text-center">
+          <div class="card-body">
+            <h5 class="card-title">Hours</h5>
+            <h1 class="card-text" id="hours">0</h1>
+          </div>
         </div>
-        <div class="card">
-          <p class="time" id="minutes">00</p>
-          <span>Minutes</span>
+      </div>
+      <div class="col">
+        <div class="card text-center">
+          <div class="card-body">
+            <h5 class="card-title">Minutes</h5>
+            <h1 class="card-text" id="minutes">0</h1>
+          </div>
         </div>
-        <div class="card">
-          <p class="time" id="seconds">00</p>
-          <span>Seconds</span>
+      </div>
+      <div class="col">
+        <div class="card text-center">
+          <div class="card-body">
+            <h5 class="card-title">Seconds</h5>
+            <h1 class="card-text" id="seconds">0</h1>
+          </div>
         </div>
-        <p class="message">I Will Always  <i class="fas fa-heart"></i> You</p>
-        <i id="light-dark-toogle" class="fas fa-sun"></i>
+      </div>
     </div>
-
-    
-    
-    <div class="container-fluid">
-        <div class="important-dates">
-            <div class="date-item">
-                <span>9 Haziran 2022:</span> İlk Buluşma/İlk Sarılma
-            </div>
-            <div class="date-item">
-                <span>3 Haziran 2022:</span> Yıldönümü
-            </div>
-            <div class="date-item">
-                <span>13 Mayıs 2022:</span> İlk Bakışma/İlk Temas
-            </div>
-            <div class="date-item">
-                <span>7 Mayıs 2022:</span> İlk Muhabbettimiz
-            </div>
-            <div class="date-item">
-                <span>13 Mart 2022:</span> İlk Mesaj/Tanışma
-            </div>
-        </div>
-
-        <p>Sen sabahlar ve şafaklar kadar güzelsin</p>
-        <p>sen ülkemin yaz geceleri gibisin</p>
-        <p>saadetten haber getiren atlı kapını çaldığında</p>
-        <p>beni unutma</p>
-        <p>ah! saklı gülüm</p>
-        <p>en hem zor hem güzelsin</p>
-        <p>şiirlerimin ılıklığında açılmalısın</p>
-        <p>sana burada veriyorum hayata ayrılan buseyi</p>
-        <p>sen memleketim kadar güzelsin</p>
-        <p>ve güzel kal</p>
-
+    <div class="text-center">
+      <i id="light-dark-toogle" class="fas fa-sun"></i>
     </div>
+ </div>
 
-
-    <script src="time.js"></script>
+ <script src="scripts.js"></script>
 </body>
 </html>
-
-
