@@ -1,21 +1,17 @@
 body {
   margin: 0;
-  padding: 0;
-  height: 100vh;
+  padding: 5px;
   background-image: url('k0.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: #fff; /* Metin rengi */
 }
 
 .container {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.2); /* Görsele bulanıklık vermek için arka plan rengi */
-  padding: 20px;
+  padding: 5px;
   border-radius: 10px; /* Opsiyonel: Container köşelerini yuvarlamak */
 }
 
@@ -30,7 +26,7 @@ p {
 
 @media only screen and (max-width: 600px) {
   body {
-    background-image: url('k0.jpg');
+    background-image: url('j0m.jpg');
     background-size: cover; /* veya contain kullanabilirsin, ihtiyacına bağlı olarak */
     background-position: center; /* Arka plan resmini ekranda ortalamak için */
     background-repeat: no-repeat; /* Arka plan resminin tekrar etmemesi için */
