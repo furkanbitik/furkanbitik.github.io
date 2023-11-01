@@ -5,6 +5,7 @@ const minutesRemaining = document.getElementById("minutes");
 const secondsRemaining = document.getElementById("seconds");
 
 const msg = document.querySelector(".message");
+msg.style.visibility = "visible";
 
 // Display Date Function
 function displayDate() {
@@ -48,5 +49,5 @@ document.querySelector("#light-dark-toogle").onclick = function (e) {
   // Toggle The Sun Shape
   e.target.classList.toggle("fa-sun");
 
-  msg.style.visibility = "visible";
+  
 };
