@@ -9,13 +9,14 @@ body {
     flex-direction: column;
     height: 100vh;
     transition: background-color 0.5s;
-}
-
-.container-fluid{
-    margin-bottom: 50px;
-}
-
-.card {
+  }
+  
+  .container {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+  }
+  .card {
     position: relative;
     width: 20vw;
     height: 200px;
@@ -25,26 +26,26 @@ body {
     justify-content: center; 
     align-items: center;
     transition: background-color 0.5s;
-}
+  }
   
-.time {
+  .time {
     font-size: 6rem;
     font-weight: bold;
     color: #292B2A;
     transition: color 0.5s;
-}
+  }
   
-.card span {
+  .card span {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     bottom: 20px;
     color: #292B2A;
     transition: color 0.5s;
-}
+  }
   
-.fas.fa-sun,
-.fas.fa-moon {
+  .fas.fa-sun,
+  .fas.fa-moon {
     font-size: 2rem ;
     font-weight: bold;
     cursor: pointer; 
@@ -52,27 +53,27 @@ body {
     position: absolute; 
     left: 20px; 
     top: 20px;
-}
+  }
   
   /* /////////////////////// Dark /////////////////// */
-body.dark {
+  body.dark {
     background-color: #2B2D42;
-}
+  }
   
-.dark .card {
+  .dark .card {
     background-color: #8D99AE;
-}
+  }
   
-.dark .time , .dark span {
+  .dark .time , .dark span {
     color: #2B2D42
-}
+  }
   
-.dark .fas.fa-sun,
-.dark .fas.fa-moon{
+  .dark .fas.fa-sun,
+  .dark .fas.fa-moon{
     color: #8D99AE
-}
+  }
   
-.message {
+  .message {
     position: absolute;
     bottom: -4rem;
     font-size: 5rem;
@@ -80,11 +81,13 @@ body.dark {
     color: #F8E700;
     font-family: 'Yellowtail', cursive;
     visibility: hidden;
-}
+  }
   
-.dark .message {
+  .dark .message {
     color: #8D99AE
-}
+  }
+
+/* Takvim */
 
 .important-dates {
     background-color: #ffffff;
@@ -99,7 +102,7 @@ body.dark {
 
 .date-item span {
     font-weight: bold;
-    color: #007bff;
+    color: #052950;
 }
     
   

@@ -29,8 +29,8 @@ function displayDate() {
   hoursRemaining.textContent = hours;
   minutesRemaining.textContent = minutes;
   secondsRemaining.textContent = remainingSeconds;
+
   
-  msg.style.visibility = "visible";
 }
 
 
@@ -47,4 +47,6 @@ document.querySelector("#light-dark-toogle").onclick = function (e) {
   e.target.classList.toggle("fa-moon");
   // Toggle The Sun Shape
   e.target.classList.toggle("fa-sun");
+
+  msg.style.visibility = "visible";
 };
