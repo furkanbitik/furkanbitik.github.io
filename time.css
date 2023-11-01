@@ -74,7 +74,6 @@ body {
   }
   
   .message {
-    position: absolute;
     bottom: -4rem;
     font-size: 5rem;
     font-weight: bold;
@@ -93,7 +92,6 @@ body {
     padding: 5px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: absolute;
 }
 
 .date-item {
