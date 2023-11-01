@@ -4,16 +4,18 @@ body {
   }
 
 .text{
+
+    background-image: url('about.jpg');
+    /*
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('about.jpg');
     background-size: cover;
     background-repeat: repeat-y; 
     filter: brightness(70%) contrast(110%); 
-    z-index: -1;
+    z-index: -1;*/
  
 }
 
