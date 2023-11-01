@@ -10,7 +10,7 @@ body {
 
 .container {
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.4); /* Görsele bulanıklık vermek için arka plan rengi */
+  background-color: rgba(0, 0, 0, 0.8); /* Görsele bulanıklık vermek için arka plan rengi */
   padding: 5px;
   border-radius: 10px; /* Opsiyonel: Container köşelerini yuvarlamak */
 }
@@ -24,7 +24,7 @@ p {
   font-family: 'Arial', sans-serif;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   body {
     background-image: url('j0m.jpg');
     background-size: cover; /* veya contain kullanabilirsin, ihtiyacına bağlı olarak */
@@ -37,7 +37,7 @@ p {
   }
 
   .container {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.9);
     max-width: 600px; /* Veya başka bir değer, metni belirli bir genişlikte sınırlamak için */
     margin: 0 auto; /* Container'ı sayfanın ortasına hizalar */
   }
