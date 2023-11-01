@@ -1,43 +1,33 @@
-const countdown = new Date("June 3, 2022");
-
-function getRemainingTime(endtime) {
-  const milliseconds = Date.parse(endtime) - Date.parse(new Date());
-  const seconds = Math.floor( (milliseconds/1000) % 60 );
-  const minutes = Math.floor( (milliseconds/1000/60) % 60 );
-  const hours = Math.floor( (milliseconds/(1000*60*60)) % 24 );
-  const days = Math.floor( milliseconds/(1000*60*60*24) );
-
-  return {
-    'total': milliseconds,
-    'seconds': seconds,
-    'minutes': minutes,
-    'hours': hours,
-    'days': days,
-  };
-}
+function calculateDays() {
+  var inputDate = document.getElementById("inputDate").value;
   
-function initClock(id, endtime) {
-  const counter = document.getElementById(id);
-  const daysItem = counter.querySelector('.js-countdown-days');
-  const hoursItem = counter.querySelector('.js-countdown-hours');
-  const minutesItem = counter.querySelector('.js-countdown-minutes');
-  const secondsItem = counter.querySelector('.js-countdown-seconds');
-
-  function updateClock() {
-    const time = getRemainingTime(endtime);
-
-    daysItem.innerHTML = time.days;
-    hoursItem.innerHTML = ('0' + time.hours).slice(-2);
-    minutesItem.innerHTML = ('0' + time.minutes).slice(-2);
-    secondsItem.innerHTML = ('0' + time.seconds).slice(-2);
-
-    if (time.total <= 0) {
-      clearInterval(timeinterval);
-    }
+  if (inputDate === "") {
+      alert("Lütfen bir tarih seçin.");
+      return;
   }
 
-  updateClock();
-  const timeinterval = setInterval(updateClock, 1000);
+  var selectedDate = new Date(inputDate);
+  var currentDate = new Date();
+
+  var timeDifference = selectedDate.getTime() - currentDate.getTime();
+  var dayDifference = Math.floor(timeDifference / (1000 * 3600 * 24));
+
+  document.getElementById("result").innerText = "Days difference: " + dayDifference + " days.";
 }
 
-initClock('js-countdown', countdown);
+// Otomatik gün hesaplama
+function autoCalculateDays() {
+  var inputDateElement = document.getElementById("inputDate");
+
+  // 3 Haziran 2022 tarihini atayalım
+  var presetDate = new Date("2022-06-03");
+  
+  // Atanan tarihi inputa yazalım
+  inputDateElement.valueAsDate = presetDate;
+  
+  // Hesaplamayı gerçekleştirelim
+  calculateDays();
+}
+
+// Sayfa yüklendiğinde otomatik hesapla fonksiyonunu çağır
+window.onload = autoCalculateDays;
