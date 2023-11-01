@@ -12,16 +12,15 @@ body {
 }
 
 .container {
-    width: 100vw;
     display: flex;
-    justify-content: space-around;
-    margin: 50px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-.container col-sm-8 {
-    display: flex ; 
-    justify-content: center; 
-    align-items: center;
+.container-fluid{
+    margin: 100px;
 }
 
 .card {
@@ -36,14 +35,14 @@ body {
     transition: background-color 0.5s;
 }
   
-  .time {
+.time {
     font-size: 6rem;
     font-weight: bold;
     color: #292B2A;
     transition: color 0.5s;
 }
   
-  .card span {
+.card span {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
