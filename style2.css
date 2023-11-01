@@ -1,8 +1,31 @@
-
 body {
   margin: 0;
   padding: 0;
   height: 100vh;
   background-image: url('r1.jpg');
-  background-size: cover; /* ya da contain kullanabilirsiniz, ihtiyaca bağlı olarak */
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff; /* Metin rengi */
+}
+
+.container {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Görsele bulanıklık vermek için arka plan rengi */
+  padding: 20px;
+  border-radius: 10px; /* Opsiyonel: Container köşelerini yuvarlamak */
+}
+
+blockquote {
+  margin: 0; /* Blockquote'in varsayılan margin'ını kaldır */
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Başlığı en üste getir */
 }
