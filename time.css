@@ -5,8 +5,9 @@ html, body{
     min-height: 500px;
     overflow: hidden;
     font-family: 'Pacifico', cursive;
-  }
-  .heart {
+}
+
+.heart {
     position: absolute;
     width: 100px;
     height: 90px;
@@ -14,9 +15,10 @@ html, body{
     left: 50%;
     margin-top: -45px;
     margin-left: -50px;
-  }
-  .heart:before,
-  .heart:after {
+}
+
+.heart:before,
+.heart:after {
     position: absolute;
     content: "";
     left: 50px;
@@ -27,27 +29,28 @@ html, body{
     border-radius: 50px 50px 0 0;
     transform: rotate(-45deg);
     transform-origin: 0 100%;
-  }
-  .heart:after {
+}
+
+.heart:after {
     left: 0;
     transform: rotate(45deg);
     transform-origin :100% 100%;
-  }
-  .heart1{
+}
+.heart1{
      animation: heart-anim 2s linear 1s infinite;
-  }
-  .heart2{
+}
+.heart2{
      animation: pounding 2s linear infinite alternate;
-  }
-  .heart1:after, .heart1:before{
+}
+.heart1:after, .heart1:before{
     background-color: #ff7693;
-  }
+}
   
-  @keyframes pounding{
+@keyframes pounding{
     0%{ transform: scale(1.5); }
     100%{ transform: scale(1); }
-  }
-  @keyframes heart-anim {
+}
+@keyframes heart-anim {
     46% {
   
       transform: scale(1);
@@ -65,14 +68,14 @@ html, body{
       opacity: 0;
       transform: scale(50);
     }
-  }
+}
   
   
   /*----------Countdown----------*/
-  .countdown{
+.countdown{
     border:2px solid green;
-  }
-  .wrapper{
+}
+.wrapper{
     text-align: center;
     margin-top: 2em;
-  }
+}
