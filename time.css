@@ -15,6 +15,13 @@ body {
     width: 100vw;
     display: flex;
     justify-content: space-around;
+    margin: 50px;
+}
+
+.container col-sm-8 {
+    display: flex ; 
+    justify-content: center; 
+    align-items: center;
 }
 
 .card {
