@@ -1,32 +1,7 @@
 body {
-  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url('r1.jpg');
+  background-size: cover; /* ya da contain kullanabilirsiniz, ihtiyaca bağlı olarak */
 }
-
-.jumbotron {
-  background-color: #eee;
-  text-align: center;
-}
-
-.jumbotron h1 {
-  font-size: 3rem;
-}
-
-.container {
-  margin-top: 20px;
-}
-
-.container p {
-  font-size: 1.2rem;
-}
-
-.container img {
-  max-width: 100%;
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-}
-
