@@ -13,7 +13,7 @@ function displayDate() {
   let destinationDate = new Date(2022, 5, 3); // 3 Haziran 2022
 
   // Difference in Milliseconds
-  let difference = destinationDate - currentDate;
+  let difference = currentDate - destinationDate;
 
   if (difference <= 0) {
     difference = 0;
