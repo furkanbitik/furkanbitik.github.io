@@ -5,37 +5,37 @@ const minutesRemaining = document.getElementById("minutes");
 const secondsRemaining = document.getElementById("seconds");
 
 const msg = document.querySelector(".message");
-let destintationDate = getDistinationDate();
 
 // Display Date Function
 function displayDate() {
   // Current Date
-  let srcDate = new Date();
-  // Difference in Seconds
-  let difference = (destintationDate - srcDate) / 1000;
+  let currentDate = new Date();
+  let destinationDate = new Date(2022, 5, 3); // 3 Haziran 2022
+
+  // Difference in Milliseconds
+  let difference = destinationDate - currentDate;
+
   if (difference <= 0) {
     difference = 0;
     msg.style.visibility = "visible";
   }
 
-  // Number Of Days
-  let days = difference / 60 / 60 / 24;
-  // Flooring The Days Number
-  daysRemaining.textContent = Math.floor(days);
+  // Convert milliseconds to seconds
+  let seconds = Math.floor(difference / 1000);
 
-  // The Fraction of Days Converted Into Hours
-  let hours = (days % 1) * 24;
-  // Flooring the Hours Number
-  hoursRemaining.textContent = Math.floor(hours);
+  // Calculate days, hours, minutes, and remaining seconds
+  let days = Math.floor(seconds / (24 * 60 * 60));
+  seconds %= 24 * 60 * 60;
+  let hours = Math.floor(seconds / (60 * 60));
+  seconds %= 60 * 60;
+  let minutes = Math.floor(seconds / 60);
+  seconds %= 60;
 
-  // The Fraction of Hours Converted Into Minutes
-  let minutes = (hours % 1) * 60;
-  // Flooring The Minutes Number
-  minutesRemaining.textContent = Math.floor(minutes);
-  // The Fraction Of Minutes Converted Into Seconds
-  let seconds = (minutes % 1) * 60;
-  // Flooring Seconds Number
-  secondsRemaining.textContent = Math.floor(seconds);
+  // Update DOM elements
+  daysRemaining.textContent = days;
+  hoursRemaining.textContent = hours;
+  minutesRemaining.textContent = minutes;
+  secondsRemaining.textContent = seconds;
 }
 
 // Initial Call
@@ -52,19 +52,3 @@ document.querySelector("#light-dark-toogle").onclick = function (e) {
   // Toggle The Sun Shape
   e.target.classList.toggle("fa-sun");
 };
-
-function getDistinationDate() {
-  const distinationMonth = 5;
-  const distinationDay = 3;
-
-  const current = new Date();
-  const currentDay = current.getDay(),
-    currentMonth = current.getMonth(),
-    currentYear = current.getFullYear();
-
-  const distinationYear = 2022
-
-  return new Date(
-    `${distinationMonth}, ${distinationDay}, ${distinationYear}, 00:00:00`
-  );
-}
