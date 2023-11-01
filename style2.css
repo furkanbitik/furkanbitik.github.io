@@ -4,6 +4,7 @@ body {
   height: 100vh;
   background-image: url('k0.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   display: flex;
   align-items: center;
@@ -18,8 +19,9 @@ body {
   border-radius: 10px; /* Opsiyonel: Container köşelerini yuvarlamak */
 }
 
-blockquote {
-  margin: 0; /* Blockquote'in varsayılan margin'ını kaldır */
+p {
+  margin: 0;
+  white-space: pre-line;
   font-style: italic; /* Metni italic yap */
   font-weight: bold; /* Metni kalın yap */
   font-size: 1.5em; /* Metni büyüt, burada 1em, varsayılan font boyutunu temsil eder. 1.5em ise 1.5 katı büyüklüğünde bir font boyutu kullanır. Ayarlayabilirsin. */
