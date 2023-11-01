@@ -18,10 +18,10 @@ body {
     background-size: cover;
     background-repeat: repeat-y; /* Y diğer eksende tekrarlama */
     filter: brightness(70%) contrast(110%); /* Resmin parlaklığını ve kontrastını ayarla */
-    z-index: -1; /* Metnin üzerine gelmemesi için z-index'i düşük tut */
+    /*z-index: -1; /* Metnin üzerine gelmemesi için z-index'i düşük tut */
   }
   
   blockquote {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Modern gölgeleme */
-    z-index: 1; /* Metni resmin üzerine getirmek için z-index'i yüksek tut */
+    /*z-index: 1; /* Metni resmin üzerine getirmek için z-index'i yüksek tut */
   }
