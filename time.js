@@ -29,7 +29,9 @@ function displayDate() {
   hoursRemaining.textContent = hours;
   minutesRemaining.textContent = minutes;
   secondsRemaining.textContent = remainingSeconds;
+  msg.style.visibility = "visible";
 }
+
 
 // Initial Call
 displayDate();
