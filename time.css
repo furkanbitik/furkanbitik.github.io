@@ -3,9 +3,7 @@
   max-width: 600px;
   width: 100%;
   background: #a18c4c;
-  display: flex;
-  justify-content: space-between;
-  padding:  100px 50px;
+  padding:  30px 20px;
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   z-index: 1;
