@@ -22,7 +22,7 @@ body {
 }
 
 .mt-3{
-  padding: 17px 15px;
+  padding: 25px 10px;
 }
 
 @media (max-width: 600px) {
@@ -57,5 +57,5 @@ body {
 }
 
 .btn-danger{
-  background-color: #934a34;
+  background-color: #fd9d80;
 }

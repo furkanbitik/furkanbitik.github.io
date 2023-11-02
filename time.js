@@ -1,9 +1,3 @@
-// İmage
-
-document.getElementById('imageButton').addEventListener('click', function(){
-    document.getElementById('imageModal').style.display = 'block';
-    });
-
 const SECOND = 1000;
 const MINUTE = 60 * SECOND;
 const HOUR = 60 * MINUTE;
