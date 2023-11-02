@@ -1,3 +1,9 @@
+// İmage
+
+document.getElementById('imageButton').addEventListener('click', function(){
+    document.getElementById('imageModal').style.display = 'block';
+    });
+
 const SECOND = 1000;
 const MINUTE = 60 * SECOND;
 const HOUR = 60 * MINUTE;
@@ -24,10 +30,3 @@ function countdown() {
 setInterval(countdown, 1000);
 
 
-// İmage
-
-// JavaScript ile butona tıklandığında resmi aç
-document.getElementById('imageButton').addEventListener('click', function() {
-// Açılacak olan resim elementini görünür yap
-    document.getElementById('imageModal').style.display = 'block';
-});
