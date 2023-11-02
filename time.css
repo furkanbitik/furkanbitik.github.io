@@ -21,10 +21,6 @@ body {
   z-index: 1;
 }
 
-.mt-3{
-  padding: 100px 50px;
-}
-
 @media (max-width: 600px) {
   body {
     padding: 5rem 2rem;
