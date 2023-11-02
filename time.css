@@ -35,14 +35,14 @@ body {
   z-index: 1;
 }
 
-  .pagination{
+.pagination{
   	background: #a18c4c;
   	display: flex;
   	padding:  15px 20px;
   	border-radius: 30px;
   	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   	z-index: 1;
-  }
+}
 
 @media (max-width: 768px) {
   body {
