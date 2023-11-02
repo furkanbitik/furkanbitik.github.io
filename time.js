@@ -5,7 +5,7 @@ const DAY = 24 * HOUR;
 
 function countdown() {
     // 25/04/23 02:00
-    let differenceDate = Date.parse('2023-04-25T19:35:13.200Z') - Date.now();
+    let differenceDate = Date.parse('2022-06-03T00:00:00.000Z') - Date.now();
 
     const days = Math.floor(differenceDate / DAY);
     differenceDate -= days * DAY;
