@@ -1,95 +1,53 @@
-html, body {
-  background-image: url('time.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
+body {
+  background-color: #a89f7e;
+  background-image: url(https://i.pinimg.com/736x/16/7b/38/167b38e1821a987e5a6f9fa17e9407ed.jpg);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  padding: 1rem 2rem;
+}
+
+.container {
+  max-width: 600px;
   width: 100%;
-  height: 100%;
-  min-width: 500px;
-  min-height: 500px;
-  overflow: hidden;
-  font-family: 'Verdana', sans-serif;
+  background: #a18c4c;
+  display: flex;
+  justify-content: space-between;
+  padding:  100px 50px;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 1;
 }
 
-@media (max-width: 600px){
-    body {
-        background-size: contain;
-        background-position: center top;
-      }
+@media (max-width: 768px) {
+  body {
+    padding: 5rem 2rem;
+  }
   
-      .container-fluid,
-      .container {
-          margin-top: 10px; /* Adjust as needed */
-      }
+  .container {
+    padding: 50px 25px;
+    gap: 50px;
+    flex-direction: column;
+  }
+  
 }
 
-.container-fluid, .container {
-    margin-top: 30px;
-    display:flex; 
-    justify-content:center; 
-    align-items:center;
-    flex-direction: column; /* This will stack your elements vertically */
+.container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  color: #37392e;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
-.heart {
-  position: absolute;
-  width: 100px;
-  height: 90px;
-  top: 50%;
-  left: 50%;
-  margin-top: -45px;
-  margin-left: -50px;
-}
-.heart:before,
-.heart:after {
-  position: absolute;
-  content: "";
-  left: 50px;
-  top: 0;
-  width: 50px;
-  height: 80px;
-  background: #fc2e5a;
-  border-radius: 50px 50px 0 0;
-  transform: rotate(-45deg);
-  transform-origin: 0 100%;
-}
-.heart:after {
-  left: 0;
-  transform: rotate(45deg);
-  transform-origin: 100% 100%;
-}
-.heart1 {
-  animation: heart-anim 2s linear 1s infinite;
-}
-.heart2 {
-  animation: pounding 2s linear infinite alternate;
-}
-.heart1:after,
-.heart1:before {
-  background-color: #ff7693;
-}
-
-/*----------Countdown----------*/
-.countdown {
-  border: 2px solid green;
-}
-.wrapper {
-  text-align: center;
-  margin-top: 2em;
-}
-
-/*----------------Calendar-------*/
-.important-dates {
-    background-color: #c0b2b2;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.date-item {
-    margin-bottom: 15px;
-}
-
-.date-item span {
-    font-weight: bold;
-    color: #ff0000;
+.container div span {
+  color: #37392e;
+  font-size: 52px;
+  text-transform: uppercase;
+  font-weight: 500;
 }
