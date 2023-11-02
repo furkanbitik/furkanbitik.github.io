@@ -21,8 +21,10 @@ body {
   z-index: 1;
 }
 
+/* Dikey Yatay */
+
 .mt-3{
-  padding: 80px 75px;
+  padding: 40px;
 }
 
 @media (max-width: 600px) {
