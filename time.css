@@ -9,6 +9,12 @@ body {
   padding: 1rem 2rem;
 }
 
+h1{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .container {
   max-width: 600px;
   width: 100%;
@@ -16,6 +22,18 @@ body {
   display: flex;
   justify-content: space-between;
   padding:  100px 50px;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 1;
+}
+
+.mt-3{
+  max-width: 600px;
+  width: 100%;
+  background: #a18c4c;
+  display: flex;
+  justify-content: space-between;
+  padding:  30px 25px;
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   z-index: 1;
