@@ -3,11 +3,14 @@ body{
   background-image: url(https://i.pinimg.com/736x/16/7b/38/167b38e1821a987e5a6f9fa17e9407ed.jpg);
   background-color: #a89f7e;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 h1{
   text-align: center;
   margin: 0px auto;
+  margin-top: 15px;
   display: block;
   background: #a18c4c;
   padding:  30px 25px;
@@ -36,10 +39,6 @@ h1{
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   z-index: 1;
-}
-
-.mt-3{
-  padding:  50px 30px;
 }
 
 @media (max-width: 600px) {
