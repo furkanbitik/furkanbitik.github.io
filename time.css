@@ -1,7 +1,25 @@
+.pagination{
+
+  max-width: 600px;
+  width: 100%;
+  background: #a18c4c;
+  display: flex;
+  justify-content: space-between;
+  padding:  100px 50px;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 1;
+
+}
+
+
 body {
   background-color: #a89f7e;
   background-image: url(https://i.pinimg.com/736x/16/7b/38/167b38e1821a987e5a6f9fa17e9407ed.jpg);
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: 'Roboto', sans-serif;
   padding: 1rem 2rem;
 }
@@ -11,8 +29,7 @@ body {
   width: 100%;
   background: #a18c4c;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding:  100px 50px;
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -21,12 +38,6 @@ body {
 
 .mt-3{
   padding: 20px 15px;
-  align-items: center;
-  justify-content: center;
-}
-
-.pagination{
-  background: #a18c4c;
 }
 
 @media (max-width: 768px) {
