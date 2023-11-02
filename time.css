@@ -8,7 +8,13 @@ body {
   min-width: 500px;
   min-height: 500px;
   overflow: hidden;
-  font-family: "Pacifico", cursive;
+  font-family: 'Verdana', sans-serif;
+}
+
+@media (max-width: 768px){
+    body {
+      background-position: center top; /* Dikey hizalamayı sağlar */
+    }
 }
 
 .container-fuild{
@@ -61,33 +67,6 @@ body {
 .heart1:after,
 .heart1:before {
   background-color: #ff7693;
-}
-
-@keyframes pounding {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes heart-anim {
-  46% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1);
-  }
-  52% {
-    transform: scale(1);
-  }
-  55% {
-    transform: scale(2);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(25);
-  }
 }
 
 /*----------Countdown----------*/
