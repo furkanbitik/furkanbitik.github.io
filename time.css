@@ -9,6 +9,14 @@ body {
   padding: 1rem 2rem;
 }
 
+h1{
+  text-align: center;
+  margin: 0px auto;
+  display: block;
+  background: #a18c4c;
+
+}
+
 .container {
   max-width: 600px;
   width: 100%;
@@ -21,7 +29,11 @@ body {
   z-index: 1;
 }
 
-@media (max-width: 768px) {
+.mt-3{
+  padding:  30px 25px;
+}
+
+@media (max-width: 600px) {
   body {
     padding: 5rem 2rem;
   }
