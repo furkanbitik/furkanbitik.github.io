@@ -27,18 +27,23 @@ body {
   padding: 40px;
 }
 
-@media (max-width: 600px) {
-  body {
+@media (max-width: 767px) {
+  .container-mobile {
+      flex-direction: column;
+  }
+}
+  
+    /*body {
     padding: 5rem 2rem;
   }
+
+
   
   .container {
     padding: 50px 25px;
     gap: 50px;
     flex-direction: column;
-  }
-  
-}
+  }*/
 
 .container div {
   display: flex;
