@@ -1,11 +1,11 @@
 body {
   background-color: #a89f7e;
-  background-image: url('https://i.pinimg.com/736x/16/7b/38/167b38e1821a987e5a6f9fa17e9407ed.jpg');
+  background-image: url(https://i.pinimg.com/736x/16/7b/38/167b38e1821a987e5a6f9fa17e9407ed.jpg);
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Verdana', sans-serif;
+  font-family: 'Roboto', sans-serif;
   padding: 1rem 2rem;
 }
 
@@ -19,29 +19,6 @@ body {
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   z-index: 1;
-}
-
-
-
-.mt-3{
-  max-width: 600px;
-  width: 100%;
-  background: #a18c4c;
-  display: flex;
-  justify-content: space-between;
-  padding:  30px 25px;
-  border-radius: 30px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  z-index: 1;
-}
-
-.pagination{
-  	background: #a18c4c;
-  	display: flex;
-  	padding:  15px 20px;
-  	border-radius: 30px;
-  	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  	z-index: 1;
 }
 
 @media (max-width: 768px) {
