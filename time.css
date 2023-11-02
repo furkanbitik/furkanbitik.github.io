@@ -1,3 +1,15 @@
+
+body {
+  background-color: #a89f7e;
+  background-image: url(https://i.pinimg.com/736x/16/7b/38/167b38e1821a987e5a6f9fa17e9407ed.jpg);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  padding: 1rem 2rem;
+}
+
 .pagination{
 
   max-width: 600px;
@@ -11,16 +23,6 @@
 }
 
 
-body {
-  background-color: #a89f7e;
-  background-image: url(https://i.pinimg.com/736x/16/7b/38/167b38e1821a987e5a6f9fa17e9407ed.jpg);
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Roboto', sans-serif;
-  padding: 1rem 2rem;
-}
 
 .container {
   max-width: 600px;
