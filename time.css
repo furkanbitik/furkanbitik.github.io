@@ -11,7 +11,7 @@ body {
   font-family: 'Verdana', sans-serif;
 }
 
-@media (max-width: 768px){
+@media (max-width: 600px){
     body {
       background-position: center top; /* Dikey hizalamayı sağlar */
     }
