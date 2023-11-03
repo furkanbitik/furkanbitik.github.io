@@ -36,3 +36,9 @@ blockquote{
 	font-weight: bold;
 }
 
+.navbar{
+	position: fixed !important;
+    z-index: 5;
+    width: 100%;
+}
+
