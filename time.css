@@ -28,20 +28,23 @@ body {
 }
 
 @media (max-width: 767px) {
-  .container,
-  .mt-3 {
-    flex-grow: 1;
-    flex-basis: 0;
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-
+  
   .container {
-    padding: 20px; /* Adjust padding as needed */
-  }
-
-  .mt-3 {
-    padding: 20px; /* Adjust padding as needed */
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding:  100px 50px;
+    border-radius: 30px;
   }
 }
+
 .container div {
   display: flex;
   flex-direction: column;
