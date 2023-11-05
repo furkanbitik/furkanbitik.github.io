@@ -41,6 +41,6 @@ blockquote{
 	justify-content: space-between; /* Başlık ve buton arasında eşit boşluk bırakır */
 	align-items: center; /* Öğeleri dikey olarak ortalar */
 	padding: 10px; /* Navbar içerisine boşluk ekler */
-	background-color: #333; /* Navbar arka plan rengi */
-	color: #fff; /* Navbar içerik rengi */
+	background-color: #fe8686; /* Navbar arka plan rengi */
+	color: rgb(27, 18, 18); /* Navbar içerik rengi */
   }
