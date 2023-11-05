@@ -35,10 +35,3 @@ blockquote{
 	font-style: italic;
 	font-weight: bold;
 }
-
-.navbar{
-	position: fixed !important;
-    z-index: 5;
-    width: 100%;
-}
-
