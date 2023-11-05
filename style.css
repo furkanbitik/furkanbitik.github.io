@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+@media (max-width: 768px) {
+	.love-container {
+	  max-width: 100%;
+	  padding: 30px;
+	}
+
+	.navbar{
+		display: flex;
+		justify-content: center; /* Başlık ve buton arasında eşit boşluk bırakır */
+		align-items:normal;
+
+	}
+}
+
 body{
 	margin: 0;
 	padding: 0;
@@ -8,6 +22,15 @@ body{
 
 p {
     font-size: 1.2em; /* veya başka bir değer */
+}
+
+.navbar{
+	display: flex;
+	justify-content: space-between; /* Başlık ve buton arasında eşit boşluk bırakır */
+	align-items: center; /* Öğeleri dikey olarak ortalar */
+	padding: 10px; /* Navbar içerisine boşluk ekler */
+	background-color: #fe8686; /* Navbar arka plan rengi */
+	color: rgb(27, 18, 18); /* Navbar içerik rengi */
 }
 
 .love-container {
@@ -22,13 +45,6 @@ p {
 	height: auto; 
 	margin: 0 auto;
 }
-  
-@media (max-width: 768px) {
-	.love-container {
-	  max-width: 100%;
-	  padding: 30px;
-	}
-}
 
 blockquote{
 	font-family: 'Arial', sans-serif;
@@ -36,11 +52,4 @@ blockquote{
 	font-weight: bold;
 }
 
-.navbar {
-	display: flex;
-	justify-content: space-between; /* Başlık ve buton arasında eşit boşluk bırakır */
-	align-items: center; /* Öğeleri dikey olarak ortalar */
-	padding: 10px; /* Navbar içerisine boşluk ekler */
-	background-color: #fe8686; /* Navbar arka plan rengi */
-	color: rgb(27, 18, 18); /* Navbar içerik rengi */
-  }
+
