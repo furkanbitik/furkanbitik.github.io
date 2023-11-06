@@ -19,11 +19,11 @@ p {
   margin: 0;
   white-space: pre-line;
   font-weight: bold; /* Metni kalın yap */
-  font-size: 2.5em; /* Metni büyüt, burada 1em, varsayılan font boyutunu temsil eder. 1.5em ise 1.5 katı büyüklüğünde bir font boyutu kullanır. Ayarlayabilirsin. */
+  font-size: 2.1em; /* Metni büyüt, burada 1em, varsayılan font boyutunu temsil eder. 1.5em ise 1.5 katı büyüklüğünde bir font boyutu kullanır. Ayarlayabilirsin. */
   font-family: 'Verdana', sans-serif;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   body {
     background-image: url('merve0.jpg');
     background-size: cover; /* veya contain kullanabilirsin, ihtiyacına bağlı olarak */
@@ -32,12 +32,11 @@ p {
     width: 100vw; /* Sayfa genişliği kadar genişlik */
     height: 100vh; /* Sayfa yüksekliği kadar yükseklik */
     margin: 0; /* Sayfa kenar boşluklarını sıfırla */
-    overflow-y: auto;
   }
 
   .container {
     background-color: rgba(0, 0, 0, 0.3);
     max-width: 600px; /* Veya başka bir değer, metni belirli bir genişlikte sınırlamak için */
-    margin: 0 auto; /* Container'ı sayfanın ortasına hizalar */
+    margin: auto;
   }
 }
