@@ -1,7 +1,8 @@
 body {
   margin: 0;
   padding: 5px;
-  background-image: url('merve1.jpg');
+  background-image: url('merve0.jpg');
+  background-position: center; 
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -19,13 +20,13 @@ p {
   margin: 0;
   white-space: pre-line;
   font-weight: bold; /* Metni kalın yap */
-  font-size: 1.8em; /* Metni büyüt, burada 1em, varsayılan font boyutunu temsil eder. 1.5em ise 1.5 katı büyüklüğünde bir font boyutu kullanır. Ayarlayabilirsin. */
+  font-size: 2.5em; /* Metni büyüt, burada 1em, varsayılan font boyutunu temsil eder. 1.5em ise 1.5 katı büyüklüğünde bir font boyutu kullanır. Ayarlayabilirsin. */
   font-family: 'Verdana', sans-serif;
 }
 
 @media only screen and (max-width: 768px) {
   body {
-    background-image: url('merve1.jpg');
+    background-image: url('merve0.jpg');
     background-size: cover; /* veya contain kullanabilirsin, ihtiyacına bağlı olarak */
     background-position: center; /* Arka plan resmini ekranda ortalamak için */
     background-repeat: no-repeat; /* Arka plan resminin tekrar etmemesi için */
